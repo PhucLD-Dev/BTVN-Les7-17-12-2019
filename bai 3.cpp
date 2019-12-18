@@ -39,13 +39,31 @@ int main(){
               {
             temp3[i][j]=temp1[i][j]+temp2[i][j];
         }
-    	}   
+    	}  
+		int temp4[4][3]; 
+		for(int i=0;i<4;i++)
+     {
+        for(int j=0;j<3;j++)
+              {
+            temp4[i][j]=temp1[i][j]-temp2[i][j];
+        }
+    	}  
+    	
     printf("\nMa tran sau cong:\n");
     for(int i=0;i<4;++i)
     {    
         for(int j=0;j<3;j++)
         {
             printf("%5d",temp3[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nMa tran sau tru:\n");
+    for(int i=0;i<4;++i)
+    {    
+        for(int j=0;j<3;j++)
+        {
+            printf("%5d",temp4[i][j]);
         }
         printf("\n");
     }
